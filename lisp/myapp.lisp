@@ -1,5 +1,5 @@
 (load "/home2/althusiu/programs/share/lisp/fcgi-preload.lisp")
-(ql:quickload 'dbi)
+(require 'dbi)
 
 (defvar *connection*
   (dbi:connect :sqlite3
